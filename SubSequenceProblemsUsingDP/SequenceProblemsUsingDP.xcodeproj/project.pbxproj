@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F6EA6A46261F38B70029669F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA6A45261F38B70029669F /* main.swift */; };
 		F6EA6A4D261F3C930029669F /* CommonSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA6A4C261F3C930029669F /* CommonSubsequence.swift */; };
+		F6EA6A4F261F58AB0029669F /* CommonSupersequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA6A4E261F58AB0029669F /* CommonSupersequence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,9 +25,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F6EA6A42261F38B70029669F /* SubSequenceProblemsUsingDP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SubSequenceProblemsUsingDP; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6EA6A42261F38B70029669F /* SequenceProblemsUsingDP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SequenceProblemsUsingDP; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6EA6A45261F38B70029669F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F6EA6A4C261F3C930029669F /* CommonSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSubsequence.swift; sourceTree = "<group>"; };
+		F6EA6A4E261F58AB0029669F /* CommonSupersequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSupersequence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +53,7 @@
 		F6EA6A43261F38B70029669F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F6EA6A42261F38B70029669F /* SubSequenceProblemsUsingDP */,
+				F6EA6A42261F38B70029669F /* SequenceProblemsUsingDP */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +63,7 @@
 			children = (
 				F6EA6A45261F38B70029669F /* main.swift */,
 				F6EA6A4C261F3C930029669F /* CommonSubsequence.swift */,
+				F6EA6A4E261F58AB0029669F /* CommonSupersequence.swift */,
 			);
 			path = SubSequenceProblemsUsingDP;
 			sourceTree = "<group>";
@@ -68,9 +71,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F6EA6A41261F38B70029669F /* SubSequenceProblemsUsingDP */ = {
+		F6EA6A41261F38B70029669F /* SequenceProblemsUsingDP */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F6EA6A49261F38B70029669F /* Build configuration list for PBXNativeTarget "SubSequenceProblemsUsingDP" */;
+			buildConfigurationList = F6EA6A49261F38B70029669F /* Build configuration list for PBXNativeTarget "SequenceProblemsUsingDP" */;
 			buildPhases = (
 				F6EA6A3E261F38B70029669F /* Sources */,
 				F6EA6A3F261F38B70029669F /* Frameworks */,
@@ -80,9 +83,9 @@
 			);
 			dependencies = (
 			);
-			name = SubSequenceProblemsUsingDP;
+			name = SequenceProblemsUsingDP;
 			productName = SubSequenceProblemsUsingDP;
-			productReference = F6EA6A42261F38B70029669F /* SubSequenceProblemsUsingDP */;
+			productReference = F6EA6A42261F38B70029669F /* SequenceProblemsUsingDP */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +103,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F6EA6A3D261F38B70029669F /* Build configuration list for PBXProject "SubSequenceProblemsUsingDP" */;
+			buildConfigurationList = F6EA6A3D261F38B70029669F /* Build configuration list for PBXProject "SequenceProblemsUsingDP" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,7 +116,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F6EA6A41261F38B70029669F /* SubSequenceProblemsUsingDP */,
+				F6EA6A41261F38B70029669F /* SequenceProblemsUsingDP */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6EA6A4D261F3C930029669F /* CommonSubsequence.swift in Sources */,
+				F6EA6A4F261F58AB0029669F /* CommonSupersequence.swift in Sources */,
 				F6EA6A46261F38B70029669F /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +269,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F6EA6A3D261F38B70029669F /* Build configuration list for PBXProject "SubSequenceProblemsUsingDP" */ = {
+		F6EA6A3D261F38B70029669F /* Build configuration list for PBXProject "SequenceProblemsUsingDP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F6EA6A47261F38B70029669F /* Debug */,
@@ -274,7 +278,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F6EA6A49261F38B70029669F /* Build configuration list for PBXNativeTarget "SubSequenceProblemsUsingDP" */ = {
+		F6EA6A49261F38B70029669F /* Build configuration list for PBXNativeTarget "SequenceProblemsUsingDP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F6EA6A4A261F38B70029669F /* Debug */,
