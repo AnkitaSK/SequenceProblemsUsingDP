@@ -1,1 +1,1 @@
-# SubSequenceProblemsUsingDP
+# SequenceProblemsUsingDP
