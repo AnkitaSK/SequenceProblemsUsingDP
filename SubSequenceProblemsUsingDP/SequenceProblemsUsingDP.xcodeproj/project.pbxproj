@@ -10,6 +10,7 @@
 		F6EA6A46261F38B70029669F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA6A45261F38B70029669F /* main.swift */; };
 		F6EA6A4D261F3C930029669F /* CommonSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA6A4C261F3C930029669F /* CommonSubsequence.swift */; };
 		F6EA6A4F261F58AB0029669F /* CommonSupersequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA6A4E261F58AB0029669F /* CommonSupersequence.swift */; };
+		F6ED01AF262028C200E9ECEA /* PalindromicSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED01AE262028C200E9ECEA /* PalindromicSubsequence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		F6EA6A45261F38B70029669F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F6EA6A4C261F3C930029669F /* CommonSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSubsequence.swift; sourceTree = "<group>"; };
 		F6EA6A4E261F58AB0029669F /* CommonSupersequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSupersequence.swift; sourceTree = "<group>"; };
+		F6ED01AE262028C200E9ECEA /* PalindromicSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromicSubsequence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				F6EA6A45261F38B70029669F /* main.swift */,
 				F6EA6A4C261F3C930029669F /* CommonSubsequence.swift */,
 				F6EA6A4E261F58AB0029669F /* CommonSupersequence.swift */,
+				F6ED01AE262028C200E9ECEA /* PalindromicSubsequence.swift */,
 			);
 			path = SubSequenceProblemsUsingDP;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6ED01AF262028C200E9ECEA /* PalindromicSubsequence.swift in Sources */,
 				F6EA6A4D261F3C930029669F /* CommonSubsequence.swift in Sources */,
 				F6EA6A4F261F58AB0029669F /* CommonSupersequence.swift in Sources */,
 				F6EA6A46261F38B70029669F /* main.swift in Sources */,
