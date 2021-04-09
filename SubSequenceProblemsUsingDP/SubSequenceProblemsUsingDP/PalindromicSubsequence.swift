@@ -9,7 +9,7 @@
 import Foundation
 
 
-// Longest Palindromic Subsequence length
+// 1. Longest Palindromic Subsequence length
 /*
  Given string s: agbcba, return the LPS length
  
@@ -24,4 +24,15 @@ import Foundation
 
 func lps(_ s: String) -> Int {
     return lcsMemoization(s, String(s.reversed()), s.count, s.count)
+}
+
+// 2. minimum deletion(count) needed to make a string palindrome
+/* LPS gives the longest palindromic subsequence
+ therefore, we substract a given string count by LPS count to get min number of deletion count.
+ 
+ **** this is same as no of inertion
+ 
+ */
+func minDeletion(_ s: String) -> Int {
+    return s.count - lps(s)
 }

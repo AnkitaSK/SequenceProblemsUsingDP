@@ -23,3 +23,8 @@ print(lcsString())
 
 print("Longest Palindromic Subsequence length")
 print(lps("agbcba"))
+print("minimum deletion(count) needed to make a string palindrom")
+print(minDeletion("agbcba"))
+
+print("Longest repeating subsequence length")
+print(lrs("AABEBCDD")) // produces wrong answer
