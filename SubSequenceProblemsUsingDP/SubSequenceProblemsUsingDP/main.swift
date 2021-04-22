@@ -19,7 +19,10 @@ print(lcsString())
 
 let xx = "abcdgh"
 let yy = "abedfh"
-//print(lcSubstring(xx, yy, xx.index(before: xx.endIndex), yy.index(before: yy.endIndex), tt: &tt))
+var tt = Array(repeating: Array(repeating: -1, count: xx.count + 1), count: yy.count + 1)
+var ans = Int.min
+lcSubstring(xx, yy, xx.index(before: xx.endIndex), yy.index(before: yy.endIndex), tt: &tt, ans: &ans)
+print(ans)
 //print(lcSubstring(xx, yy, xx.endIndex, yy.endIndex))
 
 

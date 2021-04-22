@@ -10,22 +10,33 @@ import Foundation
 
 // using dp - memoization
 
-// works only when the condition is met 1st time, if any time else is hit the recurssion ends. This can not be achieved with recurssion
-func lcSubstring(_ x: String, _ y: String, _ n: String.Index, _ m: String.Index) -> Int {
+// bottom up DP - memoization in recurssion
+func lcSubstring(_ x: String, _ y: String, _ n: String.Index, _ m: String.Index, tt: inout [[Int]], ans: inout Int) {
     // base condition
     // (smallest valid input)
+    let nInt = x.distance(from: x.startIndex, to: n)
+    let yInt = y.distance(from: y.startIndex, to: m)
     if n == x.startIndex || m == y.startIndex {
-        return 0
+        tt[nInt][yInt] = 0
+        return
+    }
+    
+    if tt[nInt][yInt] != -1 {
+        // calculate ans
+        ans = max(ans, tt[nInt][yInt])
+//        return tt[nInt][yInt]
     }
     
     // choice diagram, reducing the number of steps
-//    if x[x.index(before: n)] == y[y.index(before: m)]{
     if x[xx.index(before: n)] == y[yy.index(before: m)]{
-        print(x[xx.index(before: n)])
-        return lcSubstring(x, y, x.index(before: n), y.index(before: m)) + 1
-        
+        tt[nInt][yInt] = tt[nInt - 1][yInt - 1] + 1
+        lcSubstring(x, y, x.index(before: n), y.index(before: m), tt: &tt, ans: &ans)
+        ans = max(ans, tt[nInt][yInt])
     } else {
-        return 0
+        tt[nInt][yInt] = 0
+        lcSubstring(x, y, x.index(before: n), m, tt: &tt, ans: &ans)
+        lcSubstring(x, y, n, y.index(before: m), tt: &tt, ans: &ans)
+        ans = max(ans, tt[nInt][yInt])
     }
 }
 
