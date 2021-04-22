@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC8007AA2630ADEE00BA1092 /* LargestCommonSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8007A92630ADEE00BA1092 /* LargestCommonSubstring.swift */; };
 		F6EA6A46261F38B70029669F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA6A45261F38B70029669F /* main.swift */; };
 		F6EA6A4D261F3C930029669F /* CommonSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA6A4C261F3C930029669F /* CommonSubsequence.swift */; };
 		F6EA6A4F261F58AB0029669F /* CommonSupersequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA6A4E261F58AB0029669F /* CommonSupersequence.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BC8007A92630ADEE00BA1092 /* LargestCommonSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargestCommonSubstring.swift; sourceTree = "<group>"; };
 		F6EA6A42261F38B70029669F /* SequenceProblemsUsingDP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SequenceProblemsUsingDP; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6EA6A45261F38B70029669F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F6EA6A4C261F3C930029669F /* CommonSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSubsequence.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				F6EA6A45261F38B70029669F /* main.swift */,
 				F6EA6A4C261F3C930029669F /* CommonSubsequence.swift */,
 				F6EA6A4E261F58AB0029669F /* CommonSupersequence.swift */,
+				BC8007A92630ADEE00BA1092 /* LargestCommonSubstring.swift */,
 			);
 			path = SubSequenceProblemsUsingDP;
 			sourceTree = "<group>";
@@ -129,6 +132,7 @@
 				F6EA6A4D261F3C930029669F /* CommonSubsequence.swift in Sources */,
 				F6EA6A4F261F58AB0029669F /* CommonSupersequence.swift in Sources */,
 				F6EA6A46261F38B70029669F /* main.swift in Sources */,
+				BC8007AA2630ADEE00BA1092 /* LargestCommonSubstring.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

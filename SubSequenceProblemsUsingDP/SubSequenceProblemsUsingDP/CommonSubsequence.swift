@@ -72,10 +72,10 @@ func lcsMemoization(_ x: String, _ y: String, _ n: Int, _ m: Int) -> Int {
     let _xIndex = x.index(x.startIndex, offsetBy: n - 1)
     let _yIndex = y.index(y.startIndex, offsetBy: m - 1)
     if x[_xIndex] == y[_yIndex] {
-        t[n][m] = lcs(x, y, n - 1, m - 1) + 1 // + 1 because one match is found
+        t[n][m] = lcsMemoization(x, y, n - 1, m - 1) + 1 // + 1 because one match is found
         return t[n][m]
     } else {
-        t[n][m] = max(lcs(x, y, n - 1, m), lcs(x, y, n, m - 1)) // max because longest
+        t[n][m] = max(lcsMemoization(x, y, n - 1, m), lcsMemoization(x, y, n, m - 1)) // max because longest
         return t[n][m]
     }
 }
@@ -85,29 +85,24 @@ func lcsMemoization(_ x: String, _ y: String, _ n: Int, _ m: Int) -> Int {
  When someone says return Longest Common Subsequence we have to implement lcsMemoization + lcsString
  */
 func lcsString() -> String { // not working -- need to debug again 
+    var i = n - 1
+    var j = m - 1
     var outPutString = ""
-    var i = n
-    var j = m
     while i > 0 && j > 0 {
-        var _iIndex = x.index(x.startIndex, offsetBy: i - 1)
-        if i < x.count {
-            _iIndex = x.index(x.startIndex, offsetBy: i)
-        }
-        var _jIndex = y.index(y.startIndex, offsetBy: j - 1)
-        if j < y.count {
-            _jIndex = y.index(x.startIndex, offsetBy: j)
-        }
-        
-        if x[_iIndex] == y[_jIndex] {
-            outPutString += String(x[_iIndex]) // either, because they are equal
+        let iIndex = x.index(x.startIndex, offsetBy: i - 1)
+        let jIndex = y.index(y.startIndex, offsetBy: j - 1)
+        if x[iIndex] == y[jIndex] {
+            outPutString += String(x[iIndex])
             i -= 1
             j -= 1
-        } else if t[i - 1][j] > t[i][j - 1] { // we came from max part
+        } else if t[i - 1][j] > t[i][j - 1] {
             i -= 1
         } else {
             j -= 1
         }
     }
+
+//    print(String(outPutString.reversed()))
     
     return String(outPutString.reversed()) // O(1)
 }
