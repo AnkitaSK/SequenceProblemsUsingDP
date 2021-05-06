@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6CF1F842642D95C0024227A /* PalindromicSubString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CF1F832642D95C0024227A /* PalindromicSubString.swift */; };
 		F6EA6A46261F38B70029669F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA6A45261F38B70029669F /* main.swift */; };
 		F6EA6A4D261F3C930029669F /* CommonSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA6A4C261F3C930029669F /* CommonSubsequence.swift */; };
 		F6EA6A4F261F58AB0029669F /* CommonSupersequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA6A4E261F58AB0029669F /* CommonSupersequence.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F6CF1F832642D95C0024227A /* PalindromicSubString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromicSubString.swift; sourceTree = "<group>"; };
 		F6EA6A42261F38B70029669F /* SequenceProblemsUsingDP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SequenceProblemsUsingDP; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6EA6A45261F38B70029669F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F6EA6A4C261F3C930029669F /* CommonSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSubsequence.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				F6EA6A4C261F3C930029669F /* CommonSubsequence.swift */,
 				F6EA6A4E261F58AB0029669F /* CommonSupersequence.swift */,
 				F6ED01AE262028C200E9ECEA /* PalindromicSubsequence.swift */,
+				F6CF1F832642D95C0024227A /* PalindromicSubString.swift */,
 				F6ED01B0262032A900E9ECEA /* RepeatingSubsequence.swift */,
 			);
 			path = SubSequenceProblemsUsingDP;
@@ -136,6 +139,7 @@
 				F6EA6A4D261F3C930029669F /* CommonSubsequence.swift in Sources */,
 				F6ED01B1262032A900E9ECEA /* RepeatingSubsequence.swift in Sources */,
 				F6EA6A4F261F58AB0029669F /* CommonSupersequence.swift in Sources */,
+				F6CF1F842642D95C0024227A /* PalindromicSubString.swift in Sources */,
 				F6EA6A46261F38B70029669F /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -28,3 +28,9 @@ print(minDeletion("agbcba"))
 
 print("Longest repeating subsequence length")
 print(lrs("AABEBCDD")) // produces wrong answer
+
+
+print(longestPalindrome("aacabdkacaa"))
+
+// aacabdkacaa
+// aacakdbacaa
